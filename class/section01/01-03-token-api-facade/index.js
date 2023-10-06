@@ -13,7 +13,7 @@ function getToken(){
     console.log(result)
     return result
 }
-function sendTokenToSNS(phonnum, result){
+function sendTokenToSMS(phonnum, result){
     console.log(phonnum + "번호로 "+ result + "전송했습니다")
 }
 
@@ -26,7 +26,7 @@ function creatrTokenOfPhone(phonnum){
 
     const mytoken = getToken()
     
-    sendTokenToSNS(phonnum, mytoken)
+    sendTokenToSMS(phonnum, mytoken)
 }
 
 
