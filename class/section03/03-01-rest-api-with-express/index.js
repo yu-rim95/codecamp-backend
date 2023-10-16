@@ -4,7 +4,7 @@ import express from 'express' //요즘방식 => mmodule 방식
 const app = express()
 
 app.get('/qqq', function (req, res) {
-  res.send('Hello World')
+  res.send('zxcvㅁㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇㄹzxvzxㄴ')
 })
 
 

@@ -4,17 +4,15 @@ import express from 'express' //요즘방식 => mmodule 방식
 import { checkPhone, getToken, sendTokenToSMS } from "./phone.js"
 // import sendTokenToSMS from './phone.js' //express default 가져오기
 
+
 import swaggerUi from 'swagger-ui-express';
-import swaggerDocument from './swagger.json';
-
-
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-
+import swaggerJsdoc from 'swagger-jsdoc';
+import { options } from './swagger/config.js'; //옵션가져오기
 
 
 const app = express()
 app.use(express.json()) //use(express.json()) 는 사용한다 적용시킨다는 뜻으로 body로들어오는 json형태를 해석할수있게됨 옛날에는 bodyParser사용
-
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJsdoc(options)));
 // 조회하기
 app.get('/boards', function (req, res) {
   // 1. DB접속후 , 데이터를 조회 => 데이터를 조회했다고 가정하고 실습시작
