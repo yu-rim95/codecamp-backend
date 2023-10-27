@@ -1,1 +1,7 @@
 node_modules
+class/section03/03-06-graphql-api-with-apollo-server/package.json
+class/section03/03-04-rest-api-with-express-swagger/package.json
+class/section03/03-04-rest-api-with-express-swagger/yarn.lock
+class/section03/03-05-rest-api-with-frontend/backend/package.json
+class/section03/03-05-rest-api-with-frontend/backend/yarn.lock
+class/section03/03-06-graphql-api-with-apollo-server/yarn.lock
